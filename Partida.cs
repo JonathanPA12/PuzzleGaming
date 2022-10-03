@@ -49,6 +49,7 @@ namespace PuzleGame
             //Eventos Formulario Usuario
             login.button1.Click += new System.EventHandler(this.button1_Click);
             login.button2.Click += new System.EventHandler(this.button2_Click);
+            login.about.Click += new System.EventHandler(this.about_Click);
 
             //Eventos Formulario Juego
             juego.b16.Click += new System.EventHandler(this.b16_Click);
@@ -88,12 +89,16 @@ namespace PuzleGame
             login.button2.BackColor = Color.Purple;
             login.button2.ForeColor = Color.White;
             ((Button)login.button2).Font = new Font("Roboto", 8, FontStyle.Bold);
-            login.button2.Text = "Logout";
+            login.button2.Text = "Exit";
             login.BackColor = Color.Black;
             login.JugadorName.ForeColor = Color.BlueViolet;
             ((Label)login.JugadorName).Font = new Font("Verdana", 20, FontStyle.Bold);
-            
-            
+            login.about.BackColor = Color.Purple;
+            login.about.ForeColor = Color.White;
+            ((Button)login.about).Font = new Font("Roboto", 8, FontStyle.Bold);
+
+
+
             juego.terminarJuego.ForeColor = Color.Yellow;
             juego.terminarJuego.BackColor = Color.Purple;
             ((Button)juego.terminarJuego).Font = new Font("Roboto", 9, FontStyle.Bold);
@@ -271,11 +276,23 @@ namespace PuzleGame
                 "dependiendo tu posicion. Tambien puede utilizar el click del" +
                 "mouse para moverte:" +
                 "Este juego fue desarrollado por Mauren Quesada y Jonathan Pineda");
-
-
+        }
+        private void about_Click(object sende, EventArgs e)
+        {
+            //mostrar un mensaje de ayuda
+            MessageBox.Show("El JUEGO QUINCE \n" +
+                "Para el desarrollo de este juego se toma en cuenta lo siguente:\n" +
+                "\t 1. La aplicación utiliza la arquitectura de Modelo-Vista-Controldador.\n" +
+                "\t 2. Genera el llenado desordenado (aleatorio) del puzle con todos los numeros del 1 al 15.\n" +
+                "\t 3. Al mover las casillas actualiza la vista automaticamente.\n" +
+                "\t 4. El juego valida que sólo las casillas correctas puedan moverse.\n" +
+                "\t 5. El juego realiza el conteo de lo movimientos.\n" +
+                "\t 6. El juego lleva un registro de los jugadores.\n" +
+                "\t 7. Muestra la solucion del juego.\n" +
+                "\t 8. Tiene su seccion de ayuda.");
 
         }
-      
+
 
         private void Solution_Click(object sende, EventArgs e)
         {

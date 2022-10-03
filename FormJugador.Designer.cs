@@ -33,6 +33,7 @@ namespace Quiz3_JuegoQuince
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.about = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // JugadorName
@@ -70,6 +71,15 @@ namespace Quiz3_JuegoQuince
             this.button2.Text = "Salir";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // about
+            // 
+            this.about.Location = new System.Drawing.Point(191, 281);
+            this.about.Name = "about";
+            this.about.Size = new System.Drawing.Size(54, 23);
+            this.about.TabIndex = 4;
+            this.about.Text = "acerca";
+            this.about.UseVisualStyleBackColor = true;
+            // 
             // FormJugador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -77,6 +87,7 @@ namespace Quiz3_JuegoQuince
             this.BackgroundImage = global::PuzleGame.Properties.Resources.adc;
             this.ClientSize = new System.Drawing.Size(423, 316);
             this.ControlBox = false;
+            this.Controls.Add(this.about);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
@@ -95,5 +106,6 @@ namespace Quiz3_JuegoQuince
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button about;
     }
 }
