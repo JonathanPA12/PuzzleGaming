@@ -70,8 +70,9 @@ namespace PuzleGame
             
             juego.terminarJuego.Click += new System.EventHandler(this.terminarJuego_Click);
             juego.information.Click += new System.EventHandler(this.information_Click);
+            juego.Solution.Click += new System.EventHandler(this.Solution_Click);
         }
-
+        
         public void frontEnd()
         {
             juego.StartPosition = FormStartPosition.CenterScreen;
@@ -92,12 +93,16 @@ namespace PuzleGame
             
             juego.terminarJuego.ForeColor = Color.Yellow;
             juego.terminarJuego.BackColor = Color.Purple;
+            ((Button)juego.terminarJuego).Font = new Font("Roboto", 9, FontStyle.Bold);
             juego.BackColor = Color.Black;
+            juego.Solution.ForeColor = Color.Yellow;
+            juego.Solution.BackColor = Color.Purple;
+            ((Button)juego.Solution).Font = new Font("Roboto", 8, FontStyle.Bold);
             juego.information.ForeColor = Color.Yellow;
             juego.information.BackColor = Color.Purple;
             ((Button)juego.information).Font = new Font("Roboto", 8, FontStyle.Bold);
 
-            ((Button)juego.terminarJuego).Font = new Font("Roboto", 9, FontStyle.Bold);
+
             juego.label1.Text = "Movimientos";
             juego.label2.Text = Convert.ToString(jugador.MovimientosRealizados);
             juego.label1.ForeColor = Color.White;
@@ -263,6 +268,36 @@ namespace PuzleGame
                 "dependiendo tu posicion. Tambien puede utilizar el click del" +
                 "mouse para moverte:" +
                 "Este juego fue desarrollado por Mauren Quesada y Jonathan Pineda");
+
+
+
+        }
+
+        private void Solution_Click(object sende, EventArgs e)
+        {
+            //mostrar la solucion del juego
+           /* MessageBox.Show("1 2 3 4" +
+                "5 6 7 8" +
+                "9 10 11 12" +
+                "13 14 15");*/
+            //ordenar los botones y mostrar la solucion
+            juego.b1.Text = "1";
+            juego.b2.Text = "2";
+            juego.b3.Text = "3";
+            juego.b4.Text = "4";
+            juego.b5.Text = "5";
+            juego.b6.Text = "6";
+            juego.b7.Text = "7";
+            juego.b8.Text = "8";
+            juego.b9.Text = "9";
+            juego.b10.Text = "10";
+            juego.b11.Text = "11";
+            juego.b12.Text = "12";
+            juego.b13.Text = "13";
+            juego.b14.Text = "14";
+            juego.b15.Text = "15";
+            juego.b16.Text = " ";
+
 
 
 

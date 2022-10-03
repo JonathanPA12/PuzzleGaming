@@ -48,6 +48,7 @@ namespace Quiz3_JuegoQuince
             this.terminarJuego = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Solution = new System.Windows.Forms.Button();
             this.information = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -233,6 +234,16 @@ namespace Quiz3_JuegoQuince
             this.information.UseVisualStyleBackColor = true;
             this.information.Click += new System.EventHandler(this.information_Click);
             // 
+            // Solution
+            // 
+            this.Solution.Location = new System.Drawing.Point(229, 297);
+            this.Solution.Name = "Solution";
+            this.Solution.Size = new System.Drawing.Size(75, 23);
+            this.Solution.TabIndex = 20;
+            this.Solution.Text = "Solucion";
+            this.Solution.UseVisualStyleBackColor = true;
+            this.Solution.Click += new System.EventHandler(this.Solution_Click);
+            // 
             // Puzzle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,6 +251,7 @@ namespace Quiz3_JuegoQuince
             this.BackgroundImage = global::PuzleGame.Properties.Resources.puzzle;
             this.ClientSize = new System.Drawing.Size(414, 348);
             this.ControlBox = false;
+            this.Controls.Add(this.Solution);
             this.Controls.Add(this.information);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -289,7 +301,9 @@ namespace Quiz3_JuegoQuince
         public System.Windows.Forms.Button terminarJuego;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Button Solution;
         public System.Windows.Forms.Button information;
+
     }
 
 }

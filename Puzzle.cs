@@ -31,5 +31,10 @@ namespace Quiz3_JuegoQuince
         {
 
         }
+
+        private void Solution_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
