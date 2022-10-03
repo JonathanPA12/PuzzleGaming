@@ -71,7 +71,10 @@ namespace PuzleGame
             juego.terminarJuego.Click += new System.EventHandler(this.terminarJuego_Click);
             juego.information.Click += new System.EventHandler(this.information_Click);
             juego.Solution.Click += new System.EventHandler(this.Solution_Click);
+            
         }
+        
+        
         
         public void frontEnd()
         {
@@ -272,6 +275,7 @@ namespace PuzleGame
 
 
         }
+      
 
         private void Solution_Click(object sende, EventArgs e)
         {

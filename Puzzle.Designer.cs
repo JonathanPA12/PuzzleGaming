@@ -224,16 +224,6 @@ namespace Quiz3_JuegoQuince
             this.label2.TabIndex = 18;
             this.label2.Text = "label2";
             // 
-            // information
-            // 
-            this.information.Location = new System.Drawing.Point(123, 297);
-            this.information.Name = "information";
-            this.information.Size = new System.Drawing.Size(75, 23);
-            this.information.TabIndex = 19;
-            this.information.Text = "Ayuda";
-            this.information.UseVisualStyleBackColor = true;
-            this.information.Click += new System.EventHandler(this.information_Click);
-            // 
             // Solution
             // 
             this.Solution.Location = new System.Drawing.Point(229, 297);
@@ -243,6 +233,16 @@ namespace Quiz3_JuegoQuince
             this.Solution.Text = "Solucion";
             this.Solution.UseVisualStyleBackColor = true;
             this.Solution.Click += new System.EventHandler(this.Solution_Click);
+            // 
+            // information
+            // 
+            this.information.Location = new System.Drawing.Point(123, 297);
+            this.information.Name = "information";
+            this.information.Size = new System.Drawing.Size(75, 23);
+            this.information.TabIndex = 19;
+            this.information.Text = "Ayuda";
+            this.information.UseVisualStyleBackColor = true;
+            this.information.Click += new System.EventHandler(this.information_Click);
             // 
             // Puzzle
             // 
@@ -303,7 +303,6 @@ namespace Quiz3_JuegoQuince
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Button Solution;
         public System.Windows.Forms.Button information;
-
     }
 
 }

@@ -36,5 +36,10 @@ namespace Quiz3_JuegoQuince
         {
 
         }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
