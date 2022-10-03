@@ -86,8 +86,8 @@ namespace PuzleGame
             ((Button)login.button2).Font = new Font("Roboto", 8, FontStyle.Bold);
             login.button2.Text = "Logout";
             login.BackColor = Color.Black;
-            login.DigiteUsuario.ForeColor = Color.BlueViolet;
-            ((Label)login.DigiteUsuario).Font = new Font("Verdana", 20, FontStyle.Bold);
+            login.JugadorName.ForeColor = Color.BlueViolet;
+            ((Label)login.JugadorName).Font = new Font("Verdana", 20, FontStyle.Bold);
             
             
             juego.terminarJuego.ForeColor = Color.Yellow;

@@ -29,20 +29,21 @@ namespace Quiz3_JuegoQuince
         /// </summary>
         private void InitializeComponent()
         {
-            this.DigiteUsuario = new System.Windows.Forms.Label();
+            this.JugadorName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // DigiteUsuario
+            // JugadorName
             // 
-            this.DigiteUsuario.AutoSize = true;
-            this.DigiteUsuario.Location = new System.Drawing.Point(133, 84);
-            this.DigiteUsuario.Name = "DigiteUsuario";
-            this.DigiteUsuario.Size = new System.Drawing.Size(46, 13);
-            this.DigiteUsuario.TabIndex = 0;
-            this.DigiteUsuario.Text = "Register";
+            this.JugadorName.AutoSize = true;
+            this.JugadorName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.JugadorName.Location = new System.Drawing.Point(133, 84);
+            this.JugadorName.Name = "JugadorName";
+            this.JugadorName.Size = new System.Drawing.Size(46, 13);
+            this.JugadorName.TabIndex = 0;
+            this.JugadorName.Text = "Register";
             // 
             // textBox1
             // 
@@ -79,7 +80,7 @@ namespace Quiz3_JuegoQuince
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.DigiteUsuario);
+            this.Controls.Add(this.JugadorName);
             this.Name = "FormJugador";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FormUsuario_Load_1);
@@ -90,7 +91,7 @@ namespace Quiz3_JuegoQuince
 
         #endregion
 
-        public System.Windows.Forms.Label DigiteUsuario;
+        public System.Windows.Forms.Label JugadorName;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.Button button1;
         public System.Windows.Forms.Button button2;
