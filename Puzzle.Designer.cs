@@ -197,7 +197,7 @@ namespace Quiz3_JuegoQuince
             // 
             // terminarJuego
             // 
-            this.terminarJuego.Location = new System.Drawing.Point(297, 82);
+            this.terminarJuego.Location = new System.Drawing.Point(21, 297);
             this.terminarJuego.Name = "terminarJuego";
             this.terminarJuego.Size = new System.Drawing.Size(75, 23);
             this.terminarJuego.TabIndex = 16;
@@ -208,7 +208,7 @@ namespace Quiz3_JuegoQuince
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(284, 142);
+            this.label1.Location = new System.Drawing.Point(284, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 17;
@@ -217,7 +217,7 @@ namespace Quiz3_JuegoQuince
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(318, 163);
+            this.label2.Location = new System.Drawing.Point(325, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 18;
@@ -225,7 +225,7 @@ namespace Quiz3_JuegoQuince
             // 
             // information
             // 
-            this.information.Location = new System.Drawing.Point(287, 218);
+            this.information.Location = new System.Drawing.Point(123, 297);
             this.information.Name = "information";
             this.information.Size = new System.Drawing.Size(75, 23);
             this.information.TabIndex = 19;
@@ -238,7 +238,7 @@ namespace Quiz3_JuegoQuince
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PuzleGame.Properties.Resources.puzzle;
-            this.ClientSize = new System.Drawing.Size(393, 271);
+            this.ClientSize = new System.Drawing.Size(414, 348);
             this.ControlBox = false;
             this.Controls.Add(this.information);
             this.Controls.Add(this.label2);
